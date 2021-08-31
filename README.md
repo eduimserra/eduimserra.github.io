@@ -1,4 +1,3 @@
 Current projects
 
-Tea Cozy from Codecademy /n
-Excursion from Codecademy
+Tea Cozy from Codecademy / Excursion from Codecademy
