@@ -1,3 +1,12 @@
-Current projects
+<h1>List of projects</h1>
 
-Tea Cozy from Codecademy / Excursion from Codecademy
+<ul>
+  <li>Completed</li>
+  <ul>
+    <li>Excursion</li>
+  </ul>
+  <li>On going</li>
+  <ul>
+    <li>Colmar Academy</li>
+  </ul>
+</ul>
