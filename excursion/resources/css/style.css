@@ -3,6 +3,18 @@ html {
     font-family: Verdana, sans-serif;
 }
 
+@media only screen and (max-width: 360px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    html {
+        font-size: 12px;
+    }
+}
+
 .container {
     display: grid;    
     grid-template-columns: repeat(auto-fill, minmax(15rem, 100%));
@@ -28,20 +40,62 @@ footer {
     justify-self: end;
 }
 
+header h1 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+header h2 {
+    margin-bottom: 1rem;
+}
+
 footer h3 {
-    font-weight: normal;
-    font-size: 1.375rem;
-    color: gray;    
-}
-
-#description h1 {
-    font-weight: 300;
-    font-size: 2.625rem;
-    color: white;    
-}
-
-#description h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 0.625rem;
     font-weight: normal;
     font-size: 1.3125rem;
     color: gray;    
 }
+
+#description h1 {
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 2.625rem;
+    color: white;        
+}
+
+#description h2 {
+    margin-top: 2.5rem;
+    font-weight: normal;
+    font-size: 1.3125rem;
+    color: gray;
+    text-decoration: none;    
+}
+
+@media only screen and (max-width: 896px) {
+    #description img {
+        width: 90vw;
+        height: auto;
+    }
+
+    #coming-soon img {
+        height: 12vw;
+        width: auto;
+    }
+}
+
+#description img, #coming-soon img {
+    display: block;
+    margin: 1rem auto 1rem auto;
+}
+
+#coming-soon h1 {
+    font-size: 2.625rem;
+    color: white;
+}
+
+#coming-soon h1, #coming-soon h2 {
+    margin-top: 2.5rem;
+}
+
