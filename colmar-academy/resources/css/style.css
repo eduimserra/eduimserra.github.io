@@ -1,0 +1,46 @@
+html {
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: white;
+}
+
+nav {
+    height: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+nav h1 {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+nav span {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.logo {
+    grid-column: 1 / 2;
+}
+
+.menu {
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+
+.landing {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.landing img {
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.landing div {
+    grid-area: 2 / 2 / 3 / 3;
+}
