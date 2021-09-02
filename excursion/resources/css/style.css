@@ -74,6 +74,11 @@ footer h3 {
 }
 
 @media only screen and (max-width: 896px) {
+    header h1, #description h1, #description h2, #coming-soon h1 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
     #description img {
         width: 90vw;
         height: auto;
