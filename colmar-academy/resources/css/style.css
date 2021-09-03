@@ -1,5 +1,6 @@
 html {
     font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
     background-color: white;
 }
 
@@ -17,30 +18,140 @@ nav h1 {
 }
 
 nav span {
-    display: inline-block;
     font-size: 2rem;
     font-weight: 400;
+}
+
+nav ul > li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+button {
+    object-fit: cover;
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    background-color:rgba(74, 74, 74, 1);
 }
 
 .logo {
     grid-column: 1 / 2;
 }
 
-.menu {
+.menu {    
     grid-column: 2 / 3;
     justify-self: end;
 }
 
+.sign-in {
+    margin-right: 1.5rem;
+}
+
 .landing {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1.5rem 6fr 1.5rem 3fr 1fr;
+    grid-template-rows: 2rem 1fr 2rem;
+    justify-items: center;    
+    background-color: rgba(210, 210, 210, 1);    
 }
 
 .landing img {
-    grid-area: 1 / 1 / 4 / 2;
+    object-fit: cover;
+    width: 100%;   
+    grid-area: 2 / 2 / 3 / 3;
 }
 
 .landing div {
+    grid-area: 2 / 4 / 3 / 5;
+    align-self: center;
+}
+
+.landing h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;    
+}
+
+.landing h2 {
+    margin-bottom: 1.5rem;
+}
+
+.landing h1, .landing h2 {
+    color: rgba(74, 74, 74, 1);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1.5rem 6fr 1.5rem 1rem 4fr;
+    grid-template-rows: repeat(3, 1rem 1rem 1fr) 1rem 2rem;    
+}
+
+.practice {
+    grid-area: 3 / 2 / 11 / 3;
+}
+
+.practice img {
+    object-fit: cover;
+    width: 100%;
+    grid-area: 3 / 2 / 7 / 3;
+}
+
+.practice h1, .practice p, .practice h6 {
+    grid-area: 7 / 2 / 11 / 3;
+}
+
+.orientation {
+    grid-area: 1 / 4 / 5 / 7;
+    display: grid;
+    grid-template-columns: 1rem 35fr 65fr;
+    grid-template-rows: 2rem 1fr 1rem;    
+}
+
+.orientation img {
+    object-fit: cover;
+    width: 100%;
     grid-area: 2 / 2 / 3 / 3;
+}
+
+.orientation-subdiv {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.campus {
+    grid-area: 5 / 4 / 8 / 7;
+    display: grid;
+    grid-template-columns: 1rem 35fr 65fr;
+    grid-template-rows: 1rem 1fr 1rem;
+}
+
+.campus img {
+    object-fit: cover;
+    width: 100%;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.campus-subdiv {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.guest {
+    grid-area: 8 / 4 / 11 / 7;
+    display: grid;
+    grid-template-columns: 1rem 35fr 65fr;
+    grid-template-rows: 1rem 1fr 1rem;
+    background-color: rgba(210, 210, 210, 1);
+}
+
+.guest img {
+    object-fit: cover;
+    width: 100%;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.guest-subdiv {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+video {
+    width: 60%;
 }
