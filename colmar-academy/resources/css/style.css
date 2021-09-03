@@ -37,6 +37,7 @@ button {
     object-fit: cover;
     width: 100%;
     font-size: 1.5rem;
+    font-family: "Source Sans Pro", sans-serif;
     color: white;
     background-color:rgba(74, 74, 74, 1);
     padding: 0.5rem 3rem;    
