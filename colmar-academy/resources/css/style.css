@@ -18,6 +18,7 @@ h1 {
 nav h1 {
     grid-column: 2 / 3;
     display: inline-block;
+    color: rgba(0, 0, 0, 1);
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -388,30 +389,66 @@ footer ul {
 
 /* Media queries */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
-    nav {
-        height: 6.4rem;
+}
+
+@media only screen and (max-width: 680px) {
+    html {
+        font-size: 16px;
+    }
+    nav {        
         display: grid;
         grid-template-columns: repeat(auto-fill, 25%);
-        justify-items: center;       
+        justify-items: center;
         align-content: center;
-    }        
+    }
+    button {
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 14rem;
+        display: grid;
+    }
+    video {
+        margin-bottom: 1.5rem;
+    }
+    footer {        
+        height: auto;
+    }
+    footer h6 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
     .logo-text, .on-campus, .online, .companies, .sign-in {
         display: none;
     }
     .on-campus-mobile, .online-mobile, .sign-in-mobile {
         display: inline-block;
-    }    
-    .landing, .info, .orientation, .campus, .guest, .courses, .thesis-exhibit, .media, .exhibit-container, .prototype, .research {
+    }
+    video, footer, .landing, .info, .orientation, .campus, .guest, .courses, .thesis-exhibit, .media, .exhibit-container, .prototype, .research {
         display: block;
     }
     .mobile-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 90%);
+        grid-template-columns: repeat(auto-fill, 100%);
         justify-content: center;
+    }
+    .landing h1, h2 {
+        margin-left: 1rem;
+    }
+    .landing h1 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .landing h2 {
+        margin-bottom: 1.5rem;
+    }
+    .practice>* {
+        display: none;
     }
     .info-img {
         display: none;
@@ -419,6 +456,52 @@ footer ul {
     .info-img-mobile {
         display: block;
         object-fit: cover;
-        width: 100%;        
+        width: 100%;
     }
+    .subdiv {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .subdiv>* {
+        margin-bottom: 1rem;
+    }   
+    .orientation, .campus, .guest {
+        margin: 1rem 1rem 0 1rem;
+    }
+    .courses {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .courses>h1 {
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .course>* {
+        display: none;
+    }
+    .course h1 {
+        font-weight: 600;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1rem;
+        margin-left: 0;
+        margin-bottom: 0.5rem;                     
+        display: block;
+        background-color: lightgray;
+    }
+    .software {
+        margin-top: 2rem;
+    }
+    .marketing {
+        margin-bottom: 2rem;
+    }
+    .thesis-exhibit h1 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }    
+    .media h1, .media p, .exhibit-container, footer ul {
+        display: none;
+    }    
 }
