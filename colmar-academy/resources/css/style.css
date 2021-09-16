@@ -11,8 +11,12 @@ nav {
     align-items: center;
 }
 
-h1 {
+h2 {
     font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 nav h1 {
@@ -125,16 +129,17 @@ footer ul {
     align-self: center;
 }
 
-.landing h1 {
+.landing h2 {
     margin-bottom: 1.875rem;
     font-size: 3rem;
 }
 
-.landing h2 {
+.landing h3 {
     margin-bottom: 1.875rem;
+    font-size: 1.5rem;
 }
 
-.landing h1, .landing h2 {
+.landing h2, .landing h3 {
     color: rgba(74, 74, 74, 1);
 }
 
@@ -154,7 +159,7 @@ footer ul {
     grid-area: 3 / 2 / 7 / 3;
 }
 
-.practice h1 {
+.practice h2 {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
@@ -171,7 +176,7 @@ footer ul {
 .info-img {
     object-fit: cover;
     width: 100%;
-    min-width: 120px;
+    min-width: 120px;    
 }
 
 .info-img-mobile {
@@ -246,23 +251,25 @@ footer ul {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.course h1 {
-    font-size: 1.5rem;
-}
-
 .courses img {
     object-fit: cover;
     width: 100%;
 }
 
-.courses h1 {
+.courses h2 {
     grid-area: 2 / 1 / 3 / span 7;
     justify-self: center;
     margin-top: 1rem;
     margin-left: 1rem;
 }
 
-.courses h2 {
+.courses h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.courses h4 {
     color: rgba(75, 75, 75, 1);
     font-size: 1rem;
     font-weight: 400;
@@ -308,7 +315,7 @@ footer ul {
     grid-template-rows: 2rem auto 2rem auto;
 }
 
-.thesis-exhibit>h1 {
+.thesis-exhibit>h2 {
     grid-area: 2 / 1 / 3 / -1;
     justify-self: center;
 }
@@ -319,7 +326,7 @@ footer ul {
     grid-template-rows: auto 1.5rem auto 1rem auto 2rem;
 }
 
-.media h1 {
+.media h3 {
     grid-row: 3 / 4;
 }
 
@@ -335,12 +342,12 @@ footer ul {
     grid-template-rows: repeat(2, auto) 1fr;
 }
 
-.exhibit-h1 {
+.exhibit-h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.exhibit-h2 {
+.exhibit-h4 {
     font-size: 1rem;
     font-weight: 400;
     color: rgba(75, 75, 75, 1);
@@ -437,14 +444,14 @@ footer ul {
         grid-template-columns: repeat(auto-fill, 100%);
         justify-content: center;
     }
-    .landing h1, h2 {
+    .landing h2, h3 {
         margin-left: 1rem;
     }
-    .landing h1 {
+    .landing h2 {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-    .landing h2 {
+    .landing h3 {
         margin-bottom: 1.5rem;
     }
     .practice>* {
@@ -471,7 +478,7 @@ footer ul {
     .courses {
         background-color: rgba(255, 255, 255, 1);
     }
-    .courses>h1 {
+    .courses>h2 {
         margin-top: 2rem;
         margin-left: auto;
         margin-right: auto;
@@ -480,7 +487,7 @@ footer ul {
     .course>* {
         display: none;
     }
-    .course h1 {
+    .course h3 {
         font-weight: 600;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
@@ -496,12 +503,12 @@ footer ul {
     .marketing {
         margin-bottom: 2rem;
     }
-    .thesis-exhibit h1 {
+    .thesis-exhibit h2 {
         margin-top: 2rem;
         margin-bottom: 1rem;
         text-align: center;
     }    
-    .media h1, .media p, .exhibit-container, footer ul {
+    .media h3, .media p, .exhibit-container, footer ul {
         display: none;
     }    
 }
